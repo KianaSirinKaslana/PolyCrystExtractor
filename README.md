@@ -58,7 +58,7 @@ PolyCrystExtractor/
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourname/PolyCrystExtractor.git
+git clone https://github.com/KianaSirinKaslana/PolyCrystExtractor.git
 cd PolyCrystExtractor
 
 # 2. 创建虚拟环境
@@ -126,9 +126,9 @@ python -m src.layer0_ingest.download \
 
 ## 📮 联系
 
-- 问题反馈：[GitHub Issues](https://github.com/yourname/PolyCrystExtractor/issues)
+- 问题反馈：[GitHub Issues](https://github.com/KianaSirinKaslana/PolyCrystExtractor/issues)
 - 预印本：待发布（ChemRxiv / arXiv）
-- 邮件：your.email@example.com
+- 邮件：kianakaslana1227@gmail.com
 
 ---
 
