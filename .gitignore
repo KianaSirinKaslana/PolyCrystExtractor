@@ -9,7 +9,8 @@ data/vlm_finetune/
 data/golden_standard/
 data/processed/*
 !data/processed/.gitkeep
-
+data/golden_standard/*
+!data/golden_standard/*.json
 # ── 模型权重（过大/敏感） ──────────────────────────────────────────────────
 *.pt
 *.pth
@@ -53,3 +54,6 @@ Thumbs.db
 *.docx
 *.zip
 *.tar.gz
+
+
+.ipynb_checkpoints/
