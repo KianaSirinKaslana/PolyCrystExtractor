@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  polycryst:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../data:/app/data
+      - ../notebooks:/app/notebooks
+    environment:
+      - PYTHONPATH=/app/src
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: polycryst
+      POSTGRES_PASSWORD: polycryst_dev
+      POSTGRES_DB: polymer_crystal
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
